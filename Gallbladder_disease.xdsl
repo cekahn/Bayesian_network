@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="V1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Age">
+			<state id="up_to_37" />
+			<state id="over_37" />
+			<probabilities>0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="Sex">
+			<state id="male" />
+			<state id="female" />
+			<probabilities>0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="Gallstones">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Age Sex</parents>
+			<probabilities>0.05 0.95 0.07000000000000001 0.93 0.13 0.87 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Cholecystitis">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Gallstones</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Appendicitis">
+			<state id="present" />
+			<state id="absent" />
+			<probabilities>0.07543999999999999 0.92456</probabilities>
+		</cpt>
+		<cpt id="Unknown">
+			<state id="present" />
+			<state id="absent" />
+			<probabilities>0.71228 0.28772</probabilities>
+		</cpt>
+		<cpt id="Gastroenteritis">
+			<state id="present" />
+			<state id="absent" />
+			<probabilities>0.1193 0.8807</probabilities>
+		</cpt>
+		<cpt id="SBO">
+			<state id="present" />
+			<state id="absent" />
+			<probabilities>0.04737 0.95263</probabilities>
+		</cpt>
+		<cpt id="Anorexia">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Appendicitis Unknown Cholecystitis Gastroenteritis SBO</parents>
+			<probabilities>0.9973986 0.00260147 0.9859521 0.01404794 0.991155 0.008845 0.952237 0.04776298 0.9915452 0.008454776000000001 0.9543442 0.04565579 0.9712537999999999 0.02874624 0.8447703 0.1552297 0.9961025999999999 0.003897405 0.978954 0.02104598 0.9867488 0.01325118 0.9284437 0.07155635 0.9873334 0.01266657 0.9316006 0.06839945 0.9569337 0.04306632 0.7674419 0.2325581 0.9888137 0.01118632 0.9395939 0.06040613 0.9619664999999999 0.03803349 0.7946192 0.2053808 0.9636444 0.03635554 0.8036801 0.1963199 0.8763912 0.1236088 0.3325123 0.6674877 0.9832411 0.01675884 0.9095023 0.09049773999999999 0.9430199 0.05698006 0.6923077 0.3076923 0.9455338 0.05446623 0.7058824 0.2941177 0.8148148 0.1851852 0 1</probabilities>
+		</cpt>
+		<cpt id="Vomiting">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Appendicitis Unknown Cholecystitis Gastroenteritis SBO</parents>
+			<probabilities>1 0 1 0 0.9254347000000001 0.07456528 0.9124668 0.08753315 1 0 1 0 0.6768838 0.3231162 0.6206896 0.3793103 1 0 1 0 0.8994236 0.1005764 0.881932 0.118068 1 0 1 0 0.5641688 0.4358312 0.4883721 0.5116279 1 0 1 0 0.8542588 0.1457412 0.8289125000000001 0.1710875 1 0 1 0 0.3684547 0.6315454 0.2586207 0.7413793 1 0 1 0 0.8034188 0.1965812 0.7692308 0.2307692 1 0 1 0 0.1481481 0.8518519 0 1</probabilities>
+		</cpt>
+		<cpt id="Diarrhea">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Appendicitis Unknown Cholecystitis Gastroenteritis SBO</parents>
+			<probabilities>1 0 1 0 0.356455 0.643545 0.2445341 0.7554659 1 0 1 0 0.3028263 0.6971738 0.1815787 0.8184214 1 0 1 0 0.3051083 0.6948917 0.1842576 0.8157424 1 0 1 0 0.2472007 0.7527992999999999 0.1162791 0.8837209 1 0 1 0 0.271778 0.728222 0.1451307 0.8548692 1 0 1 0 0.2110929 0.7889071 0.07389162000000001 0.9261084000000001 1 0 1 0 0.2136752 0.7863248 0.07692308 0.9230769 1 0 1 0 0.1481481 0.8518519 0 1</probabilities>
+		</cpt>
+		<cpt id="Obstipation">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Appendicitis Unknown Cholecystitis Gastroenteritis SBO</parents>
+			<probabilities>0.3289651 0.6710349 0.1764571 0.8235429 0.3189496 0.6810503999999999 0.1641654 0.8358346 0.3289651 0.6710349 0.1764571 0.8235429 0.3189496 0.6810503999999999 0.1641654 0.8358346 0.2905203 0.7094796 0.129275 0.870725 0.2799311 0.7200689 0.1162791 0.8837209 0.2905203 0.7094796 0.129275 0.870725 0.2799311 0.7200689 0.1162791 0.8837209 0.240671 0.759329 0.06809621 0.9319037999999999 0.2293377 0.7706623 0.05418719 0.9458128 0.240671 0.759329 0.06809621 0.9319037999999999 0.2293377 0.7706623 0.05418719 0.9458128 0.1971678 0.8028322 0.01470588 0.9852941 0.1851852 0.8148148 0 1 0.1971678 0.8028322 0.01470588 0.9852941 0.1851852 0.8148148 0 1</probabilities>
+		</cpt>
+		<cpt id="Similar_Sx">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Appendicitis Unknown Cholecystitis Gastroenteritis SBO</parents>
+			<probabilities>0.8325191 0.1674809 0.6770011 0.3229989 0.8163113 0.1836887 0.6457432 0.3542568 0.7097 0.2903 0.4401353 0.5598647 0.6816062000000001 0.3183938 0.3859549 0.6140451 0.7462789 0.2537211 0.5106809 0.4893192 0.7217253 0.2782747 0.4633274 0.5366727 0.5602168 0.4397832 0.1518468 0.8481532000000001 0.5176572 0.4823428 0.06976744999999999 0.9302326 0.819958 0.180042 0.6527762 0.3472238 0.8025346 0.1974654 0.6191739000000001 0.3808261 0.6879273 0.3120727 0.3981455 0.6018546 0.6577267 0.3422733 0.3399015 0.6600985 0.7272499 0.2727501 0.4739819 0.5260181 0.7008547000000001 0.2991453 0.4230769 0.5769231 0.5272331 0.4727669 0.0882353 0.9117647 0.4814815 0.5185185 0 1</probabilities>
+		</cpt>
+		<cpt id="US_Murphy_Sign">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Cholecystitis</parents>
+			<probabilities>0.7191 0.2809 0.1237 0.8763</probabilities>
+		</cpt>
+		<cpt id="US_Thick_GB_Wall">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Cholecystitis</parents>
+			<probabilities>0.453 0.547 0.116 0.884</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.2423.0 ACADEMIC" name="Unnamed">
+			<node id="Age">
+				<name>Age</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>78 217 154 253</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Sex">
+				<name>Sex</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>264 217 340 253</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Gallstones">
+				<name>Gallstones</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>174 367 250 403</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Cholecystitis">
+				<name>Cholecystitis</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>527 367 603 403</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Appendicitis">
+				<name>Appendicitis</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>533 37 609 73</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Unknown">
+				<name>Unknown</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>527 271 603 307</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Gastroenteritis">
+				<name>Gastroenteritis</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>533 115 609 151</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="SBO">
+				<name>SBO</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>533 193 609 229</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Anorexia">
+				<name>Anorexia</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>996 31 1072 67</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Vomiting">
+				<name>Vomiting</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>998 123 1074 159</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Diarrhea">
+				<name>Diarrhea</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>997 220 1073 256</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Obstipation">
+				<name>Obstipation</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>997 316 1073 352</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Similar_Sx">
+				<name>Similar_Sx</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>998 408 1074 444</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="US_Murphy_Sign">
+				<name>US_Murphy_Sign</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>395 523 471 559</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="US_Thick_GB_Wall">
+				<name>US_Thick_GB_Wall</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>587 523 663 559</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

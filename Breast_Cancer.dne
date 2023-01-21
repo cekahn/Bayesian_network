@@ -1,0 +1,62 @@
+// ~->[DNET-1]->~
+
+bnet Network1 {
+    title = "Network1";
+    comment = "";
+    visual V1 {
+    };
+
+node Age {
+    kind = NATURE;
+    discrete = TRUE;
+    chance = CHANCE;
+    title = "Age";
+    parents = ();
+    states = (, , , , );
+    probs = 
+        (0.40000000, 0.15000000, 0.15000000, 0.15000000, 0.15000000);
+    user U1 {
+        DSL_OUTCOME_ORDER = "1";
+    };
+visual V1 {
+    center = (218, 171);
+};
+};
+
+node Breast_Cancer {
+    kind = NATURE;
+    discrete = TRUE;
+    chance = CHANCE;
+    title = "Breast Cancer";
+    parents = (Age);
+    states = (present, absent);
+    probs = 
+        ((0.00400000, 0.99600000),
+        (0.01000000, 0.99000000),
+        (0.01400000, 0.98600000),
+        (0.02300000, 0.97700000),
+        (0.02600000, 0.97400000));
+    user U1 {
+    };
+visual V1 {
+    center = (491, 167);
+};
+};
+
+node Mammogram {
+    kind = NATURE;
+    discrete = TRUE;
+    chance = CHANCE;
+    title = "Mammogram";
+    parents = (Breast_Cancer);
+    states = (normal, abnormal);
+    probs = 
+        ((0.10000000, 0.90000000),
+        (0.95000000, 0.05000000));
+    user U1 {
+    };
+visual V1 {
+    center = (753, 169);
+};
+};
+};

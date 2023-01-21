@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Age">
+			<state id="" />
+			<state id="" />
+			<state id="" />
+			<state id="" />
+			<state id="" />
+			<intervals>0 40 50 60 70 80</intervals>
+			<probabilities>0.4 0.15 0.15 0.15 0.15</probabilities>
+			<property id="DSL_OUTCOME_ORDER">1</property>
+		</cpt>
+		<cpt id="Breast_Cancer">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Age</parents>
+			<probabilities>0.004 0.996 0.01 0.99 0.014 0.986 0.023 0.977 0.026 0.974</probabilities>
+		</cpt>
+		<cpt id="Mammogram">
+			<state id="normal" />
+			<state id="abnormal" />
+			<parents>Breast_Cancer</parents>
+			<probabilities>0.1 0.9 0.95 0.05</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.2423.0 ACADEMIC" name="Network1">
+			<node id="Breast_Cancer">
+				<name>Breast Cancer</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="10" />
+				<position>435 125 547 210</position>
+				<barchart active="true" width="182" height="60" />
+			</node>
+			<node id="Mammogram">
+				<name>Mammogram</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="10" />
+				<position>687 127 819 211</position>
+				<barchart active="true" width="193" height="60" />
+			</node>
+			<node id="Age">
+				<name>Age</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="10" />
+				<position>183 149 254 193</position>
+				<barchart active="true" width="188" height="108" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
